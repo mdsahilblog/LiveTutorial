@@ -18,27 +18,15 @@ and open the template in the editor.
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
     </head>
     <body>
-<?php
-include 'connect.php';
-/* @var $_POST type */
-if(isset($_POST['submit'])){
-    
-    $name = mysqli_real_escape_string($con, $_POST['name']);
-    $email = mysqli_real_escape_string($con, $_POST['email']);
-    $timing = mysqli_real_escape_string($con, $_POST['timing']);
  
-    $insertquery = "insert into ds(name,email,timing)values('$name','$email','$timing')";
-    $iquery = mysqli_query($con, $insertquery);
-}
-?>   
         <nav>
             <input type="checkbox" id="check">
             <label for="check" class="checkbtn"><i class="fa fa-bars"></i></label>
-            <label class="logo"><a href="index.php">Live Tutorial</a></label>
+            <label class="logo"><a href="index.html">Live Tutorial</a></label>
             <ul>
-                <li><a href="index.php"><i class="fa fa-home"></i> Home</a></li>
-                <li class="active"><a href="index.php">Live Trainings</a></li>
-                <li><a href="register.php"><i class="fa fa-sign-in"></i> Register</a></li>
+                <li><a href="index.html"><i class="fa fa-home"></i> Home</a></li>
+                <li class="active"><a href="index.html">Live Trainings</a></li>
+                <li><a href="register.html"><i class="fa fa-sign-in"></i> Register</a></li>
             </ul>
         </nav>
         
@@ -74,8 +62,8 @@ if(isset($_POST['submit'])){
 <!--cameras-->  
  <div class="trap"><center><h1>About the Course</h1></center></div>
  This course teaches the fundamentals of programming in Python 3. We will begin at the beginning, with variables, conditionals, and loops, and get to some intermediate material like class inheritance.
- <br>You will have lots of opportunities to practice. You will also learn ways to reason about program execution, so that it is no longer mysterious and you are able to debug programs when they donâ€™t
- work.<br>By the end of the specialization, youâ€™ll be writing programs of your own. And youâ€™ll be able to learn to use new modules and libraries on your own by reading the documentation. That will 
+ <br>You will have lots of opportunities to practice. You will also learn ways to reason about program execution, so that it is no longer mysterious and you are able to debug programs when they don’t
+ work.<br>By the end of the specialization, you’ll be writing programs of your own. And you’ll be able to learn to use new modules and libraries on your own by reading the documentation. That will 
  give you a great launch toward being an independent Python programmer.<br>This course is a good next step for your carrier.<br> 
  <h4><u>Benefits</u></h4>1.100% Live Classes  2.Classes with Projects   3.Flexible Schedule  4.Beginner to Intermediate Level        
 <!--cameras-->
@@ -123,7 +111,7 @@ if(isset($_POST['submit'])){
     </div>
 
         <footer class="footer">
-            <p>Copyright Â© Livetutorial. All Rights Reserved|Contact Us: +91-7077571442. </p>
+            <p>Copyright © Livetutorial. All Rights Reserved|Contact Us: +91-7077571442. </p>
         </footer>
     </body>
 </html>
